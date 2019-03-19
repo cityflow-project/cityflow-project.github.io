@@ -1328,21 +1328,30 @@ a.menu-toggle {
 	color: rgba(255, 255, 255, 0.5);
 }
 
+.popup-modal .video{
+	width: 854px;
+	height: 480px;
+}
+
 /**
  * responsive:
  * video popup modal
  * - 
  */
 
+/*@media only screen and (max-width:900px) {*/
+	/*.popup-modal {*/
+		/*max-width: 854px;*/
+	/*}*/
+/*}*/
 @media only screen and (max-width:900px) {
 	.popup-modal {
-		max-width: 700px;
+		width: 90vw;
+		/*margin: 0 20px;*/
 	}
-}
-@media only screen and (max-width:768px) {
-	.popup-modal {
-		width: auto;
-		margin: 0 20px;
+	.popup-modal .video{
+		width: 90vw;
+		height: calc(90vw * 9 /16);
 	}
 }
 
