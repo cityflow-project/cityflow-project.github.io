@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]>
+<html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]>
+<html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>CityFlow</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+
+    <!-- favicons
+     ================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+</head>
+
+<body id="top">
+
+<!-- header
+================================================== -->
+<header>
+
+    <div class="row">
+
+        <div class="logo">
+            <a href="index.html">CityFlow</a>
+        </div>
+
+        <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+                <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
+                <li><a class="smoothscroll" href="#about" title="">About</a></li>
+                <li><a class="smoothscroll" href="#features" title="">Features</a></li>
+                <li><a class="smoothscroll" href="#cta" title="">Get Start</a></li>
+                <li><a href="https://cityflow.readthedocs.io/en/latest/" title="">Docs</a></li>
+                <li class="highlight with-sep"><a href="https://github.com/zhc134/test" title="" target="_blank"><i
+                        class="fab fa-github"></i> GitHub</a></li>
+            </ul>
+        </nav>
+
+        <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+    </div>
+
+</header> <!-- /header -->
+
+<!-- intro section
+================================================== -->
+<section id="intro">
+
+    <div class="shadow-overlay"></div>
+
+    <div class="intro-content">
+        <div class="row">
+
+            <div class="col-twelve">
+
+                <div class='video-link'>
+                    <a href="#video-popup"><img src="images/play-button.png" alt=""></a>
+                </div>
+
+                <h1>Welcome to CityFlow.</h1>
+                <h5>A Multi-Agent Reinforcement Learning Environment </br>
+                    for Large Scale City Traffic Scenario </h5>
+                <a class="button stroke smoothscroll" href="#about" title="">Learn More</a>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal Popup
+    ========================================================= -->
+
+    <div id="video-popup" class="popup-modal mfp-hide">
+
+        <div class="fluid-video-wrapper">
+            <iframe src="./video/demo.mp4" width="854" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <a class="close-popup">Close</a>
+
+    </div> <!-- /video-popup -->
+
+</section> <!-- /intro -->
+
+
+<!-- About Section
+================================================== -->
+<section id="about">
+
+    <div class="row section-intro">
+        <div class="col-twelve with-bottom-line">
+
+            <h5>about</h5>
+            <h1>What is CityFlow?</h1>
+
+        </div>
+    </div>
+
+    <div class="row about-content">
+        <p> CityFlow is a new designed open-source traffic simulator, which is much faster than SUMO (Simulation of Urban Mobility). </p>
+        <p>CityFlow can support flexible definitions for road network and traffic flow based on synthetic and real-world data. It also provides
+            user-friendly interface for reinforcement learning.
+            Most importantly, CityFlow is more than twenty times faster than SUMO and is capable of supporting city-wide traffic simulation with an
+            interactive render for monitoring.
+            Besides traffic signal control, CityFlow could serve as the base for other transportation studies and can create new possibilities to test
+            machine learning methods in the intelligent transportation domain.</p>
+    </div> <!-- /about-content -->
+
+</section> <!-- /about-->
+
+
+<!-- features Section
+================================================== -->
+<section id="features">
+
+    <div class="row section-intro">
+        <div class="col-twelve">
+
+            <h5>Features</h5>
+            <h1>Great features you'll love.</h1>
+        </div>
+    </div>
+
+    <div class="row features-content">
+
+        <div class="features-list block-1-3 block-s-1-2 block-tab-full group">
+
+            <div class="bgrid feature">
+
+                <span class="icon"><i class="icon ion-md-rocket"></i></span>
+
+                <div class="service-content">
+
+                    <h3 class="h05">Efficient</h3>
+
+                    <p> Compared the performance with SUMO, CityFlow outperforms in all scenarios and even speedups about 25
+                        times on large scale road networks.
+                    </p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <span class="icon"><i class="icon ion-md-checkmark-circle-outline"></i></span>
+
+                <div class="service-content">
+                    <h3 class="h05">Effective</h3>
+                    <p> Compared the average duration of vehicles under different traffic volume settings with SUMO, the difference is lower than 0.1%
+                        in some scenarios.
+                    </p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <span class="icon"><i class="icon ion-md-car"></i></span>
+
+                <div class="service-content">
+                    <h3 class="h05">For large traffic</h3>
+                    <p> CityFlow is designed for large scale city traffic scenario, which includes hundreds of intersections and tens of thousands of
+                        running vehicles.
+                    </p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <span class="icon"><i class="icon ion-logo-python"></i></span>
+
+                <div class="service-content">
+                    <h3 class="h05">Python Interface</h3>
+
+                    <p> User can fully control the traffic signals and get various kinds of information about current state through a python
+                        interface.
+                    </p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <span class="icon"><i class="icon ion-md-repeat"></i></span>
+
+                <div class="service-content">
+                    <h3 class="h05">Reproducible</h3>
+
+                    <p> All simulations from CityFlow are reproducible. Make it easy to debug and improve reinforcement algorithm.
+                    </p>
+
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+            <div class="bgrid feature">
+
+                <span class="icon"><i class="icon ion-md-code"></i></span>
+
+                <div class="service-content">
+                    <h3 class="h05">Open Source</h3>
+
+                    <p> CityFlow is an open source project under Apache 2.0 license. Welcome to feedback your issues and suggestions.
+                    </p>
+
+                </div>
+
+            </div> <!-- /bgrid -->
+
+        </div> <!-- features-list -->
+
+    </div> <!-- features-content -->
+
+</section> <!-- /features -->
+
+<!-- cta
+================================================== -->
+<section id="cta">
+
+    <div class="row cta-content">
+
+        <div class="col-twelve">
+
+            <h1 class="h01">Get started now.</h1>
+
+            <p class="lead">Pull the docker container, or download and compile the source code.</p>
+
+            <ul class="stores">
+                <li class="download-docker">
+                    <a href="https://hub.docker.com/r/cityflowproject/cityflow" class="button round large" title="">
+                        <i class="fab fa-docker"></i> Docker Repo
+                    </a>
+                </li>
+                <li class="download-source">
+                    <a href="https://github.com/zhc134/test" class="button round large" title="">
+                        <i class="fab fa-github"></i>Source Code</a>
+                </li>
+            </ul>
+
+        </div>
+
+    </div> <!-- /cta-content -->
+
+</section> <!-- /cta -->
+
+
+<!-- footer
+================================================== -->
+<footer>
+
+    <div class="footer-bottom">
+
+        <div class="row">
+
+            <div class="col-twelve">
+                <div class="copyright">
+                    <span>© Copyright CityFlow 2019.</span>
+                    <span>Design by <a href="http://syfeng.net/">Siyuan Feng</a></span>
+                    <span>Template by <a href="http://www.styleshout.com/">styleshout</a></span>
+                </div>
+
+                <div id="go-top" style="display: none;">
+                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon ion-md-arrow-round-up"></i></a>
+                </div>
+            </div>
+
+        </div> <!-- /footer-bottom -->
+
+    </div>
+
+</footer>
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+
+</html>
